@@ -17,7 +17,7 @@ module.exports = {
 
 #### HTTP - Request
 
-__Header => `"Content-type: application/json"`__
+__Header = `"Content-type: application/json"`__
 
 | Route / URL | METHOD | Info |
 | :---------- | :-----: | :--- |
@@ -26,7 +26,6 @@ __Header => `"Content-type: application/json"`__
 | localhost:3000/contact/:_id | GET | Get 1 contact by ID |
 | localhost:3000/contact/:_id | PUT | Update 1 contact by ID |
 | localhost:3000/contact/:_id | DELETE | Delete 1 contact by ID |
-| --------------------------- | ------ | ---------------------- |
 
 
 __GET: `localhost:3000/contacts`__
