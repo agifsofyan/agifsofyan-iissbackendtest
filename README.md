@@ -5,7 +5,7 @@
 - [Mongodb](https://github.com/mongodb/mongo)
 
 ### Start
-1. `git clone https://github.com/figa-Oz/sinergi_expressjs_mongodb_restfulapi.git && cd sinergi_expressjs_mongodb_restfulapi`
+1. `git clone https://github.com/figa-Oz/agifsofyan-iiswebtest.git && cd agifsofyan-iiswebtest`
 2. `npm install` or `yarn add` to install dependencies
 3. Edit your connection database (Mongodb) in config//db/config.js. 
 ```javascript
@@ -13,7 +13,7 @@ module.exports = {
     uri: 'mongodb://<dbuser>:<dbpassword>@<server/host>:<port>/<dbname>?authSource=<role>'
 }
 ```
-4. run server (on port:3000) with ``npm start`` from the project root directory
+4. run server (on port:4000) with ``npm start`` from the project root directory
 
 #### HTTP - Request
 
@@ -21,14 +21,14 @@ __Header = `"Content-type: application/json"`__
 
 | Route / URL | METHOD | Info |
 | :---------- | :-----: | :--- |
-| localhost:3000/contacts | GET  | Get all contact |
-| localhost:3000/contacts | POST | Create new contact |
-| localhost:3000/contact/:_id | GET | Get 1 contact by ID |
-| localhost:3000/contact/:_id | PUT | Update 1 contact by ID |
-| localhost:3000/contact/:_id | DELETE | Delete 1 contact by ID |
+| localhost:4000/contacts | GET  | Get all contact |
+| localhost:4000/contacts | POST | Create new contact |
+| localhost:4000/contact/:_id | GET | Get 1 contact by ID |
+| localhost:4000/contact/:_id | PUT | Update 1 contact by ID |
+| localhost:4000/contact/:_id | DELETE | Delete 1 contact by ID |
 
 
-__GET: `localhost:3000/contacts`__
+__GET: `localhost:4000/contacts`__
 
 _Request Input Body / Field:_ `NO`
 
@@ -65,7 +65,7 @@ _Response:_ if empty data (success)
 
 ---
 
-__POST: `localhost:3000/contacts`__
+__POST: `localhost:4000/contacts`__
 
 _Request Input Body / Field:_
 ```json
@@ -106,7 +106,7 @@ _Response:_ if empty name field (error validation)
 
 ---
 
-__GET: `localhost:3000/contact/5f18a7280fcf3e79b0d46126`__
+__GET: `localhost:4000/contact/5f18a7280fcf3e79b0d46126`__
 
 _Request Input Body / Field:_ `NO`
 
@@ -138,7 +138,7 @@ _Response:_  if empty data (error validation)
 
 ---
 
-__PUT: `localhost:3000/contact/5f190a554524b30b4062ef14`__
+__PUT: `localhost:4000/contact/5f190a554524b30b4062ef14`__
 
 _Request Input Body / Field:_
 ```json
@@ -179,7 +179,7 @@ _Response:_ if not valid birtday field (error validation)
 
 ---
 
-__DELETE: `localhost:3000/contact/5f1910b71289890f803f79cd`__
+__DELETE: `localhost:4000/contact/5f1910b71289890f803f79cd`__
 
 _Request Input Body / Field:_ `NO`
 

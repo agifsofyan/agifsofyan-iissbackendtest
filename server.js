@@ -19,8 +19,8 @@ app.get("/", (req, res) => {
 });
 
 // set port, listen for requests
-app.listen(3000, () => {
-	console.log("server running on port 3000. Wait to connect database...")
+app.listen(4000, () => {
+	console.log("server running on port 4000. Wait to connect database...")
 });
 
 require("./routes/contact.routes.js")(app);
